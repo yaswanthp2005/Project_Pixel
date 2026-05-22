@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-heading {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poster {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.movie-name {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.watch-option {
+  width: 150px;
+  padding: 8px;
+  background-color: blue;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 32px;
+  }
+
+  .card-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
